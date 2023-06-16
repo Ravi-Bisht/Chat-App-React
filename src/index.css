@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* home styling  */
+.home {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* sidebar  */
+.sidebar {
+  width: 30%;
+  border-right: 1px black solid;
+  background-color: rgb(91, 89, 89);
+  overflow: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* chat  */
+.chat {
+  width: 70%;
+  background-color: rgb(197, 189, 189);
+  overflow: scroll;
+}
+
+.chat::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar  */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(66, 65, 65);
+  height: 4rem;
+  padding: 0.8rem;
+  justify-content: space-between;
+  color: whitesmoke;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user img {
+  background-color: inherit;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user button {
+  background-color: inherit;
+  border: none;
+}
+
+.user-name {
+  font-size: 1.4rem;
+}
+
+.conv-btn img {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+/* search  */
+
+.search {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchForm {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.searchForm input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 30rem;
+}
+
+.searchForm input::placeholder {
+  color: lightgray;
+}
+
+.searchBtn {
+  border: none;
+  background-color: inherit;
+}
+
+.searchBtn img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  padding-right: 1.2rem;
+}
+
+/* left user chat  */
+
+.chats {
+  background-color: rgb(82, 79, 79);
+  margin-bottom: 0.2rem;
+}
+
+.userChat {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.userChat:hover {
+  background-color: gray;
+  font-size: 1.2rem;
+}
+
+.userChat img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userChatInfo span {
+  font-weight: bold;
+}
+
+.userChatInfo p {
+  font-size: 0.8rem;
+}
+
+/* chat section  */
+
+.chatInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0.8rem;
+  background-color: rgb(66, 65, 65);
+  position: sticky;
+  top: 0px;
+}
+
+.chatIcons img {
+  height: 1.8rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+.contactName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactName div {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-left: 0.7rem;
+}
+
+.contactName img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* input styling on the right side   */
+
+.input {
+  height: 4rem;
+  background-color: white;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.7rem;
+  position: sticky;
+  top: calc(100% - 5.6rem);
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.input input::placeholder {
+  color: rgb(145, 142, 142);
+}
+
+.input button {
+  border: none;
+  padding: 0.6rem 1rem;
+  color: white;
+  background-color: grey;
+}
+/* message section  */
+
+.messages {
+  height: calc(100% - 11.2rem);
+  overflow: scroll;
+  padding: 0.8rem;
+}
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* message  */
+
+.message {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: rgb(94, 93, 93);
+}
+
+.messageInfo img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.messageContent {
+  max-width: 70%;
+}
+
+.messageContent p {
+  background-color: rgb(234, 220, 220);
+  padding: 0.8rem;
+  border-radius: 0rem 0.8rem 0.8rem 0.8rem;
+}
+
+/* message sent to the right side   */
+.message.right {
+  flex-direction: row-reverse;
+}
+
+.message.right p {
+  background-color: rgb(150, 189, 150);
+}
+
+/* start display  */
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+/* Popup styling */
+
+.popup,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+.popup-content {
+  background-color: rgb(66, 65, 65);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+  border-radius: 3px;
+  height: 40%;
+  width: 30%;
+  overflow: scroll;
+}
+
+.popup-content h1 {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.popup-content::-webkit-scrollbar {
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
